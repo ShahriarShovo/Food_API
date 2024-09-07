@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API LIST</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>http://127.0.0.1:8000/register/</li>
+        <p>[email, password, confirm_password]</p>
+        <li>http://127.0.0.1:8000/login/</li>
+        <p>[email, password]</p>
+
+        <h4><p>Get</h4>
+
+        <li>http://127.0.0.1:8000/menus/</li>
+        <li>http://127.0.0.1:8000/categories/</li>
+        <li>http://127.0.0.1:8000/items/</li>
+        <li>http://127.0.0.1:8000/modifiers/</li>
+
+        <h4><p>Create</h4>
+
+        <li>http://127.0.0.1:8000/menus/create/</li>
+        <li>http://127.0.0.1:8000/categories/create/</li>
+        <li>http://127.0.0.1:8000/items/create/</li>
+        <li>http://127.0.0.1:8000/modifiers/create/</li>
+
+        <h4><p>Payment</h4>
+
+        <li>http://127.0.0.1:8000/orders/place/</li>
+    </ul>
+</body>
+</html>
