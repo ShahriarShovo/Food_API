@@ -24,28 +24,52 @@
 </head>
 <body>
     <ul>
+        <h3>Authentication API</h3>
+        <h4>Sign Up</h4>
+        <p> Request : POST</p>
         <li>http://127.0.0.1:8000/register/</li>
         <p>[email, password, confirm_password]</p>
+
+        <h4>Login</h4>
+        <p> Request : POST</p>
         <li>http://127.0.0.1:8000/login/</li>
         <p>[email, password]</p>
 
-        <h4><p>Get</h4>
-
+        <h4><p>Get Menu, Category, Item, Modifier </h4>
+        <p> Request : GET</p>
         <li>http://127.0.0.1:8000/menus/</li>
         <li>http://127.0.0.1:8000/categories/</li>
         <li>http://127.0.0.1:8000/items/</li>
         <li>http://127.0.0.1:8000/modifiers/</li>
 
-        <h4><p>Create</h4>
-
+        <h4><p>Create Menu, Category, Item, Modifier</h4>
+        <p> Request : POST</p>
         <li>http://127.0.0.1:8000/menus/create/</li>
+            <p>Basic Auth : owner or employee
+            <p>[name, description]</p>
+
         <li>http://127.0.0.1:8000/categories/create/</li>
+            <p>Basic Auth : owner or employee
+            <p>[name,description, menu]</p>
+
         <li>http://127.0.0.1:8000/items/create/</li>
+            <p>Basic Auth : owner or employee
+            <p>[name, description, price, available, category_id]</p>
+
+
         <li>http://127.0.0.1:8000/modifiers/create/</li>
+            <p>Basic Auth : owner or employee
+            <p>[name, extra_price,item_id]</p>
+
 
         <h4><p>Payment</h4>
-
+        <p> Request : POST</p>
         <li>http://127.0.0.1:8000/orders/place/</li>
+        <p>Basic Auth : login user</p>
+        <p>[items, total_amount, payment_method, is_paid]</p>
+
+
+
     </ul>
 </body>
 </html>
